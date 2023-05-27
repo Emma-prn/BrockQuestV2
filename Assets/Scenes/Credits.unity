@@ -257,6 +257,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310698474}
   m_CullTransparentMesh: 1
+--- !u!1001 &326617749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6091050076673462586, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: MusicAnimator
+      value: 
+      objectReference: {fileID: 1703467260}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1065.1066
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 462.99582
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462587, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091050076673462588, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aaefd4ed39167a243b22e49380b28cae, type: 3}
 --- !u!1 &359451474
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +769,7 @@ RectTransform:
   - {fileID: 414297089}
   - {fileID: 310698475}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -737,6 +798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1703467259}
   - component: {fileID: 1703467258}
+  - component: {fileID: 1703467260}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -853,8 +915,28 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1703467260
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703467257}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 46f2c9687a8a0ab46a63bb777c8bbd01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1723361868
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,5 +1079,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
