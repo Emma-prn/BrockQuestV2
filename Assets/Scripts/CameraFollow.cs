@@ -16,7 +16,16 @@ public class CameraFollow : MonoBehaviour
     private float halfHeihgt;
     private float halfWidth;
 
+    private static bool camExists;
+
     void Start() {
+
+        if(!camExists) {
+            camExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        } else {
+            Destroy(gameObject);
+        }
 
         minBounds = boundBox.bounds.min;
         maxBounds = boundBox.bounds.max;

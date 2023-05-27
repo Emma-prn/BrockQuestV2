@@ -9,10 +9,19 @@ public class PlayerMovements : MonoBehaviour
     Vector2 direction;
     Animator anim;
 
+    private static bool playerExists;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        if(!playerExists) {
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        } else {
+            Destroy(gameObject);
+        }
     }
 
     void Update()
