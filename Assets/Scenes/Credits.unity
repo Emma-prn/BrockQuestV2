@@ -816,11 +816,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 00be8d456b9650145b92eca0719ad7e2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 47b4f29d8c31dfc44982f9bb3b3f2d45, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
