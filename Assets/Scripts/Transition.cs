@@ -8,24 +8,15 @@ public class Transition : MonoBehaviour
     public Animator animator;
     public Animator MusicAnimator;
     public float transitionDelayTime = 1.0f;
-    public string area_to_load;
     
     void Awake()
     {
         animator = GameObject.Find("Transition").GetComponent<Animator>();
     }
 
-    void Update()
+    public void LoadLevel(string level_to_load)
     {
-        if(Input.GetKey(KeyCode.Space))
-        {
-            LoadLevel();
-        }
-    }
-
-    public void LoadLevel()
-    {
-        StartCoroutine(DelayLoadLevel(area_to_load));
+        StartCoroutine(DelayLoadLevel(level_to_load));
     }
 
     IEnumerator DelayLoadLevel(string level_to_load)

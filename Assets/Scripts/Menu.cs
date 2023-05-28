@@ -5,19 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public Transition transition;
+
     public void OnPlayButton()
     {
-        SceneManager.LoadScene("House");
+        transition.LoadLevel("House");
     }
 
     public void OnCreditsButton()
     {
-        SceneManager.LoadScene("Credits");
+        transition.LoadLevel("Credits");
     }
 
     public void OnBackButton()
     {
-        SceneManager.LoadScene("Main_menu");
+        transition.LoadLevel("Main_menu");
     }
 
     public void OnQuitButton()
