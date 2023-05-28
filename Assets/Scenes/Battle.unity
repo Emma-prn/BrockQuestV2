@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 192082263}
   - component: {fileID: 192082262}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: BattleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1912,7 +1912,7 @@ GameObject:
   - component: {fileID: 1599328414}
   - component: {fileID: 1599328413}
   m_Layer: 0
-  m_Name: BattleMusic
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
