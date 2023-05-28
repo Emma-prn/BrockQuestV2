@@ -39,9 +39,22 @@ public class CameraFollow : MonoBehaviour
         targetPosition = new Vector3(followPlayer.transform.position.x, followPlayer.transform.position.y, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
+        if(boundBox == null) {
+            boundBox = FindObjectOfType<Bound>().GetComponent<BoxCollider2D>();
+            minBounds = boundBox.bounds.min;
+            maxBounds = boundBox.bounds.max;
+        }
+
         float clampX = Mathf.Clamp(transform.position.x, minBounds.x + halfWidth, maxBounds.x - halfWidth);
         float clampY = Mathf.Clamp(transform.position.y, minBounds.y + halfHeihgt, maxBounds.y - halfHeihgt);
 
         transform.position = new Vector3(clampX, clampY, transform.position.z);
+    }
+
+    public void SetBounds(BoxCollider2D newBounds) {
+        boundBox = newBounds;
+
+        minBounds = boundBox.bounds.min;
+        maxBounds = boundBox.bounds.max;
     }
 }
