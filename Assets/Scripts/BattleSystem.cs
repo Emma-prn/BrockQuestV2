@@ -17,8 +17,9 @@ public class BattleSystem : MonoBehaviour
     public BattleState state;
 
     public GameObject monsterPrefab;
+    public GameObject playerPrefab;
 
-    public Unit playerUnit;
+    private Unit playerUnit;
     private Unit monsterUnit;
 
     public Transform monsterSpawn;
@@ -38,8 +39,9 @@ public class BattleSystem : MonoBehaviour
     {
         GameObject monsterGO = Instantiate(monsterPrefab, monsterSpawn);
         monsterUnit = monsterGO.GetComponent<Unit>();
+        playerUnit = playerPrefab.GetComponent<Unit>();
 
-        dialogueText.text = monsterUnit.unitName;
+        dialogueText.text = monsterUnit.unitName + " apparait !";
 
         playerHUD.SetHUD(playerUnit);
         monsterHUD.SetHUD(monsterUnit);
@@ -55,7 +57,11 @@ public class BattleSystem : MonoBehaviour
         bool isDead = monsterUnit.TakeDamage(playerUnit.unitAtk);
 
         monsterHUD.SetHP(monsterUnit.currentHP);
-        dialogueText.text = "L'attaque a été efficace !";
+        if(monsterUnit.unitDef > playerUnit.unitAtk) {
+            dialogueText.text = "L'attaque n'a eu aucun effet !";
+        } else {
+            dialogueText.text = "L'attaque a été efficace !";
+        }
 
         yield return new WaitForSeconds(2f);
 

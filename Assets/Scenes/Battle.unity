@@ -1694,7 +1694,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1335690587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2066721158}
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnAttackBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1335690587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2658,7 +2670,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037114576}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2066721158}
+        m_TargetAssemblyTypeName: BattleSystem, Assembly-CSharp
+        m_MethodName: OnHealBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2037114576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2743,7 +2767,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   monsterPrefab: {fileID: 105741583947638772, guid: 86192a4f850f0054a981edf1699c1e76, type: 3}
-  playerUnit: {fileID: 0}
+  playerPrefab: {fileID: 2885682564468062734, guid: 5c0f4f4fe1169a54a913a68452ed2525, type: 3}
+  monsterSpawn: {fileID: 114765480}
   playerHUD: {fileID: 232973163}
   monsterHUD: {fileID: 1536019844}
   dialogueText: {fileID: 1012196617}

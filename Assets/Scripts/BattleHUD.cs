@@ -14,7 +14,7 @@ public class BattleHUD : MonoBehaviour
     {
         nameText.text = unit.unitName;
         currentHPText.text = unit.currentHP.ToString();
-        maxHPText.text = unit.maxHP.ToString();
+        maxHPText.text = " / " + unit.maxHP.ToString();
     }
 
     public void SetHP(int hp)

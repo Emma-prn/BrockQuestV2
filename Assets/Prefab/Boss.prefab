@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Boss
-  unitAtk: 10
-  unitDef: 10
+  unitAtk: 15
+  unitDef: 5
   maxHP: 50
   currentHP: 50
