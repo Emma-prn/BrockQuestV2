@@ -21,6 +21,8 @@ public class BattleSystem : MonoBehaviour
     public Unit playerUnit;
     private Unit monsterUnit;
 
+    public Transform monsterSpawn;
+
     public BattleHUD playerHUD;
     public BattleHUD monsterHUD;
 
@@ -34,7 +36,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator SetUpBattle()
     {
-        GameObject monsterGO = Instantiate(monsterPrefab);
+        GameObject monsterGO = Instantiate(monsterPrefab, monsterSpawn);
         monsterUnit = monsterGO.GetComponent<Unit>();
 
         dialogueText.text = monsterUnit.unitName;

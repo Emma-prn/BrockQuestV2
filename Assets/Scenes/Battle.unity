@@ -258,6 +258,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 61759304}
   m_CullTransparentMesh: 1
+--- !u!1 &114765479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 114765480}
+  m_Layer: 0
+  m_Name: MonsterSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &114765480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114765479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6.414518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &134740465
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +538,7 @@ GameObject:
   - component: {fileID: 232973160}
   - component: {fileID: 232973162}
   - component: {fileID: 232973161}
+  - component: {fileID: 232973163}
   m_Layer: 5
   m_Name: BrockPanel
   m_TagString: Untagged
@@ -576,6 +608,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232973159}
   m_CullTransparentMesh: 1
+--- !u!114 &232973163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232973159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25f8f0117435f24982411ed2b429cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1843934744}
+  currentHPText: {fileID: 1587895406}
+  maxHPText: {fileID: 281259885}
 --- !u!1 &254046361
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,6 +1744,7 @@ GameObject:
   - component: {fileID: 1536019841}
   - component: {fileID: 1536019843}
   - component: {fileID: 1536019842}
+  - component: {fileID: 1536019844}
   m_Layer: 5
   m_Name: MonsterPanel
   m_TagString: Untagged
@@ -1766,6 +1814,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536019840}
   m_CullTransparentMesh: 1
+--- !u!114 &1536019844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536019840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25f8f0117435f24982411ed2b429cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 1819441552}
+  currentHPText: {fileID: 1246146601}
+  maxHPText: {fileID: 134740467}
 --- !u!1 &1587895404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,6 +2697,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037114573}
   m_CullTransparentMesh: 1
+--- !u!1 &2066721156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066721157}
+  - component: {fileID: 2066721158}
+  m_Layer: 0
+  m_Name: BattleSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2066721157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066721156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.08492939, y: 0.91833127, z: -6.414518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2066721158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066721156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9616f896caad64f97fed7815a79ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  monsterPrefab: {fileID: 105741583947638772, guid: 86192a4f850f0054a981edf1699c1e76, type: 3}
+  playerUnit: {fileID: 0}
+  playerHUD: {fileID: 232973163}
+  monsterHUD: {fileID: 1536019844}
+  dialogueText: {fileID: 1012196617}
 --- !u!1 &2103824990
 GameObject:
   m_ObjectHideFlags: 0
