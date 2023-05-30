@@ -259,4 +259,3 @@ MonoBehaviour:
   animator: {fileID: 6091050075444824636}
   MusicAnimator: {fileID: 0}
   transitionDelayTime: 1
-  area_to_load: House
